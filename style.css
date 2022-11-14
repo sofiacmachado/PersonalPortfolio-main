@@ -35,8 +35,8 @@ a:hover {
 }
 
 .title-a {
-  font-size: 24px;
-  color: var(--yellow-color);
+  font-size: 2rem;
+  color: var(--blue-color);
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   letter-spacing: 1px;
@@ -81,8 +81,8 @@ p li {
 }
 
 .title-s {
-  font-size: 13px;
-  color: var(--turquoise-color);
+  font-size: 0.9rem;
+  color: var(--bronze-color);
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
@@ -266,7 +266,7 @@ p li {
 
 .lead {
   padding-top: 10px;
-  font-size: 18px;
+  font-size: 1rem;
   color: var(--blue-color);
   font-family: "Raleway", sans-serif;
   font-weight: 300;
@@ -304,33 +304,47 @@ p li {
   }
 }
 
-.about-mf .about-img {
+.skills-lists {
+  display: flex;
+}
+
+ul.skills-list li::before {
+  position: absolute;
+  margin-left: -1rem;
+  margin-top: 0.2rem;
+  color: var(--green);
+  font-size: var(--fz-sm);
+  line-height: 12px;
+  content: "✓";
+}
+
+.about .about-img {
   margin-bottom: 2rem;
 }
 
-.about-mf .about-img img {
+.about .about-img img {
   margin-left: 10px;
 }
 
 @media (min-width: 767px) {
-  .about-mf .box-pl2 {
+  .about .box-pl2 {
     margin-top: 3rem;
     padding-left: 0rem;
   }
 }
-
+/* 
 .progress {
   margin-bottom: 5px;
 }
 .progress-bar {
   background: linear-gradient(90deg, var(--white-color) 0%, var(--turquoise-color) 65%);
 }
-
+ */
 
 /* === Resume Section === */
 
 .resume-title {
-  font-size: 18px;
+  font-size: 1.4rem;
   color: var(--bronze-color);
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -381,7 +395,7 @@ p li {
 .services .icon i {
   font-size: 36px;
   line-height: 1;
-  color: var(--turquoise-color);
+  color: var(--bronze-color);
 }
 
 .services .title {
@@ -402,11 +416,11 @@ p li {
 }
 
 .services .icon-box:hover {
-  border-color: var(--turquoise-color);
+  border-color: var(--yellow-color);
 }
 
 .services .icon-box:hover .title-s a {
-  color: var(--turquoise-color);
+  color: var(--yellow-color);
 }
 
 /* === Portfolio === */
@@ -557,8 +571,8 @@ p li {
 
 .contact .social-links a:hover {
   color: #fff;
-  border-color: var(--turquoise-color);
-  background: var(--turquoise-color);
+  border-color: var(--blue-color);
+  background: var(--blue-color);
 }
 
 .contact .php-email-form {
@@ -567,7 +581,7 @@ p li {
 }
 
 .back-to-top:hover {
-  color: var(--turquoise-color);
+  color: var(--yellow-color);
 }
 
 .contact .php-email-form .validate {
