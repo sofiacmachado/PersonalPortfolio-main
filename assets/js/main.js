@@ -68,6 +68,20 @@
     </nav>`
   );
 
+$('#footer').append(
+  `    <div class="container mt-5">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="copyright-box">
+        <p class="copyright">&copy; Copyright <strong>Sofia Carneiro Machado</strong>. All Rights Reserved</p>
+      </div>
+    </div>
+  </div>
+</div>
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+<div id="topPage"></div>`
+)
+
 (function($) {
   "use strict";
 
