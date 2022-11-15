@@ -347,15 +347,15 @@ ul.skills-list li::before {
   font-size: 1.4rem;
   color: var(--bronze-color);
   font-family: "Raleway", sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 1px;
 }
 
 .resume .resume-item .resume-date {
-  font-size: 14px;
+  font-size: 0.9rem;
   background: #eef0f2;
   font-family: "Raleway", sans-serif;
-  color: rgb(75, 110, 87);
+  color: var(--blue-color);
   padding: 5px 15px;
   display: inline-block;
   font-weight: 500;
@@ -366,6 +366,7 @@ ul.skills-list li::before {
   font-style: italic;
 }
 
+
 /* === Services Section === */
 
 .services .icon-box {
@@ -373,7 +374,7 @@ ul.skills-list li::before {
   position: relative;
   overflow: hidden;
   background: #fff;
-
+  width: inherit;
   transition: all 0.3s ease-in-out;
   text-align: center;
   border: 1px solid #fff;
@@ -438,7 +439,15 @@ ul.skills-list li::before {
   background: var(--bronze-color);
 }
 
-
+.portfolio-img {
+  max-height: 200px;
+  height: 70%;
+  width: auto;
+  display: flex;
+}
+.portfolio-img .img-fluid {
+  object-fit: cover;
+}
 
 
 /* === Testimonials === */
@@ -694,3 +703,24 @@ footer .copyright {
   margin-bottom: .3rem;
 }
 
+
+/* === Portfolio Page === */
+
+.portfolio-page-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.portfolio-img-fluid {
+  border-radius: 5px;
+  box-shadow: 2px 2px 8px 5px #44444452;
+}
+
+.portfolio {
+  padding-top: 150px;
+}
+
+.portfolio > .title-a {
+  text-transform: uppercase;
+   color: var(--yellow-color);
+}

@@ -1,9 +1,73 @@
-/**
-* Template Name: DevFolio - v2.4.1
-* Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+// Insert Navbar and Carousel
+
+  $(".owl-carousel").owlCarousel();
+  $("#topPage").append(
+      `<nav id='navbar' class='mainPage navbar navbar-trans navbar-expand-md fixed-top header-transparent'>
+          <div class='container'>
+              <a class='portfolioName navbar-brand active' href='index.html' id='portfolioName'>Sofia Carneiro Machado</a>
+              <button class='navbar-toggler collapsed' type='button' data-toggle='collapse' data-target='#navbarMenu' aria-controls='navbarMenu' aria-expanded='false' aria-label='Toggle navigation'>
+              </button>
+              <div id='navbarMenu' class='navbarMenu navbar-collapse collapse justify-content-end'>
+                  <ul class='navbar-nav'>
+                      <li class='nav-item'>
+                      <a class='nav-link' href='#about'>About</a>
+                      </li>
+                      <li class='nav-item'>
+                      <a class='nav-link' href='#resume'>Resume</a>
+                      </li>
+                      <li class='nav-item'>
+                      <a class='nav-link' href='#portfolio'>Portfolio</a>
+                      </li>
+                      <li class='nav-item dropdown'>
+                      <a id='navbarDropdown' class='nav-link dropdown' href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                          <span>Services</span><i class='ml-2 fas fa-chevron-down'></i>
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdownMenu dropdown-item" href="#portfolio">Photography</a>
+                          <a class="dropdownMenu dropdown-item" href="#portfolio">Video Editing</a>
+                          <a class="dropdownMenu dropdown-item" href="#portfolio">Front-End Development</a>
+                      </div>
+                      </li>
+                      <li class='nav-item'>
+                      <a class='nav-link' href='#contact'>Contact</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+
+          <button class='navbar-toggler navbar-brand py-0 pr-0 pl-0 border-0 position-relative collapsed ' role='button' data-toggle='collapse' data-target='#collapseMenu' aria-controls='collapseMenu' aria-expanded='false' aria-label='Toggle navigation'>
+          <i id='navbarIcon' class="fas fa-align-justify"></i>
+          </button>
+          <div class='collapse navbar-collapse pb-6 font-weight-light bg-white position-relative' id ='collapseMenu'>
+              <form class= >
+                  <div class ='form-group mb-4'>
+                      <ul class='navbar-nav pt-4'>
+                          <li class='nav-item'>
+                              <a class='nav-link' href='#about'>About</a>
+                          </li>
+                          <li class='nav-item'>
+                              <a class='nav-link' href='#resume'>Resume</a>
+                          </li>
+                          <li class='nav-item'>
+                              <a class='nav-link' href='#portfolio'>Portfolio</a>
+                          </li>
+                          <label for="exampleFormControlSelect1"></label>
+                          <select class="form-control mb-2" id="langDropdown">
+                              <option>Photography</option>
+                              <option>Video Editing</option>
+                              <option>Web Development</option>
+                              <option>Bookselling</option>
+                          </select>
+                          <li class='nav-item'>
+                              <a class='nav-link' href='#contact'>Contact</a>
+                          </li>
+                      </ul>
+                  </div>
+               </form>
+          </div>
+    </nav>`
+  );
+
 (function($) {
   "use strict";
 
