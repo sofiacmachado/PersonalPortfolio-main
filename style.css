@@ -424,6 +424,10 @@ ul.skills-list li::before {
   color: var(--yellow-color);
 }
 
+.services p {
+  margin-bottom: 5px;
+}
+
 /* === Portfolio === */
 
 .btn-portfolio {
