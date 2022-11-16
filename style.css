@@ -441,6 +441,7 @@ ul.skills-list li::before {
 
 .portfolio-img {
   max-height: 200px;
+  min-height: 200px;
   height: 70%;
   width: auto;
   display: flex;
