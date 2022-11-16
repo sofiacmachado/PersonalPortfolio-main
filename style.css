@@ -312,7 +312,7 @@ ul.skills-list li::before {
   position: absolute;
   margin-left: -1rem;
   margin-top: 0.2rem;
-  color: var(--green);
+  color: var(--bronze-color);
   font-size: var(--fz-sm);
   line-height: 12px;
   content: "✓";
@@ -718,6 +718,7 @@ footer .copyright {
 
 .portfolio {
   padding-top: 120px;
+  padding-bottom: 115px;
 }
 
 .portfolio > .title-a {
