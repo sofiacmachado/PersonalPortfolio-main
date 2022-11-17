@@ -610,6 +610,20 @@ ul.skills-list li::before {
   background: var(--blue-color);
 }
 
+.submit-btn {
+  background: var(--yellow-color);
+  border: 0;
+  padding: 10px 24px;
+  color: var(--white-color);
+  transition: 0.4s;
+  border-radius: 5px; 
+}
+
+.submit-btn:hover {
+  background: var(--bronze-color);
+}
+
+
 .back-to-top:hover {
   color: var(--yellow-color);
 }
