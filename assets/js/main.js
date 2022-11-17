@@ -4,19 +4,19 @@
   $("#topPage").append(
       `<nav id='navbar' class='mainPage navbar navbar-trans navbar-expand-md fixed-top header-transparent'>
           <div class='container'>
-              <a class='portfolioName navbar-brand active' href='index.html' id='portfolioName'>Sofia Carneiro Machado</a>
+              <a class='portfolioName navbar-brand active' scrollto href='index.html' id='portfolioName'>Sofia Carneiro Machado</a>
               <button class='navbar-toggler collapsed' type='button' data-toggle='collapse' data-target='#navbarMenu' aria-controls='navbarMenu' aria-expanded='false' aria-label='Toggle navigation'>
               </button>
               <div id='navbarMenu' class='navbarMenu navbar-collapse collapse justify-content-end'>
                   <ul class='navbar-nav'>
                       <li class='nav-item'>
-                      <a class='nav-link' href='./index.html#about'>About</a>
+                      <a class='nav-link scrollto' href='./index.html#about'>About</a>
                       </li>
                       <li class='nav-item'>
-                      <a class='nav-link' href='./index.html#resume'>Resume</a>
+                      <a class='nav-link scrollto' href='./index.html#resume'>Resume</a>
                       </li>
                       <li class='nav-item'>
-                      <a class='nav-link' href='./index.html#portfolio'>Portfolio</a>
+                      <a class='nav-link scrollto' href='./index.html#portfolio'>Portfolio</a>
                       </li>
                       <li class='nav-item dropdown'>
                       <a id='navbarDropdown' class='nav-link dropdown' href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
@@ -29,7 +29,7 @@
                       </div>
                       </li>
                       <li class='nav-item'>
-                      <a class='nav-link' href='#contact'>Contact</a>
+                      <a class='nav-link scrollto' href='#contact'>Contact</a>
                       </li>
                   </ul>
               </div>
@@ -43,13 +43,13 @@
                   <div class ='form-group mb-4'>
                       <ul class='navbar-nav pt-4'>
                           <li class='nav-item'>
-                              <a class='nav-link' href='#about'>About</a>
+                              <a class='nav-link scrollto' href='#about'>About</a>
                           </li>
                           <li class='nav-item'>
-                              <a class='nav-link' href='#resume'>Resume</a>
+                              <a class='nav-link scrollto' href='#resume'>Resume</a>
                           </li>
                           <li class='nav-item'>
-                              <a class='nav-link' href='#portfolio'>Portfolio</a>
+                              <a class='nav-link scrollto' href='#portfolio'>Portfolio</a>
                           </li>
                           <label for="exampleFormControlSelect1"></label>
                           <select class="form-control mb-2" id="langDropdown">
@@ -59,7 +59,7 @@
                               <option>Bookselling</option>
                           </select>
                           <li class='nav-item'>
-                              <a class='nav-link' href='#contact'>Contact</a>
+                              <a class='nav-link scrollto' href='#contact'>Contact</a>
                           </li>
                       </ul>
                   </div>
@@ -153,7 +153,7 @@ $('#footer').append(
     </div>
   </div>
 </div>
-<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+<a href="./index.html#hero" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 <div id="topPage"></div>`
 );
 
@@ -297,6 +297,18 @@ $('#footer').append(
     dots: true,
     loop: true,
     items: 1
+  });
+
+  $(".btn-portfolio").on("click", e => {
+    $(".btn-portfolio").removeClass("active");
+    $(e.target).addClass("active");
+    const filterClass = $(e.target).attr("data-filter");
+    if (filterClass === "*") {
+      $(".portfolio-container section").removeClass("hidden");
+    } else {
+      $(`.portfolio-container section.${filterClass}`).removeClass("hidden");
+      $(".portfolio-container section").not(`.${filterClass}`).addClass("hidden");
+    }
   });
 
   // Initiate venobox (lightbox feature used in portofilo)

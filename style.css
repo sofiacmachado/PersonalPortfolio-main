@@ -429,7 +429,6 @@ ul.skills-list li::before {
 }
 
 /* === Portfolio === */
-
 .btn-portfolio {
   background: var(--yellow-color);
   border: 0;
@@ -441,6 +440,10 @@ ul.skills-list li::before {
 
 .btn-portfolio:hover {
   background: var(--bronze-color);
+}
+
+.btn-portfolio.active {
+  background-color: var(--blue-color);
 }
 
 .portfolio-img {
@@ -455,11 +458,18 @@ ul.skills-list li::before {
 }
 
 
+/* The "show" class is added to the filtered elements */
+.hidden {
+  display: none;
+}
+
+
 /* === Testimonials === */
+
 
 .testimonials {
   padding-bottom: 80px;
-  background-color: rgba(245, 203, 190, 0.300);
+  background-color: rgba(53, 58, 71, 0.75);
   background-size: cover;
   position: relative;
   
@@ -472,7 +482,7 @@ ul.skills-list li::before {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(245, 203, 190, 0.300);
+  background: rgba(53, 58, 71, 0.75);
 }
 
 .testimonials .section-header {
@@ -481,14 +491,14 @@ ul.skills-list li::before {
 
 .testimonials .carousel-item {
   text-align: center;
-  color: rgb(44, 44, 44);
+  color: var(--white-color);
   font-family: 'Raleway', sans-serif;
 }
 
 .testimonials .carousel-item .testimonial-img {
   width: 100px;
   border-radius: 50%;
-  border: 4px solid rgba(240, 192, 200, 0.438);
+  border: 4px solid rgba(53, 58, 71, 0.75);
   margin: 0 auto;
 }
 
@@ -496,18 +506,18 @@ ul.skills-list li::before {
   font-size: 20px;
   font-weight: 700;
   margin: 10px 0 5px 0;
-  color:rgb(75, 110, 87);
+  color:var(--yellow-color);
 }
 
 .testimonials .carousel-item h4 {
   font-size: 14px;
   font-weight: 300;
-  color: rgb(75, 110, 87);
+  color: var(--yellow-color);
   margin: 0 0 15px 0;
 }
 
 .testimonials .carousel-item #leftArrow, .testimonials .carousel-item #rightArrow {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(53, 58, 71, 0.75);
   font-size: 26px;
 }
 
@@ -526,7 +536,11 @@ ul.skills-list li::before {
 .testimonials .carousel-item p {
   font-style: italic;
   margin: 0 auto 15px auto;
-  color: rgb(48, 48, 48);
+  color: var(--white-color);
+}
+
+.testimonials p {
+  font-size: 1.3rem;
 }
 
 @media (min-width: 1024px) {
