@@ -23,9 +23,9 @@
                           <span>Services</span><i class='ml-2 fas fa-chevron-down'></i>
                       </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdownMenu dropdown-item" href="#portfolio">Photography</a>
-                          <a class="dropdownMenu dropdown-item" href="#portfolio">Video Editing</a>
-                          <a class="dropdownMenu dropdown-item" href="#portfolio">Front-End Development</a>
+                          <a class="dropdownMenu dropdown-item btn-portfolio" type="button" data-filter='filterPhotography' href="#portfolio">Photography</a>
+                          <a class="dropdownMenu dropdown-item btn-portfolio" type="button" data-filter='filterVideography' href="#portfolio">Video Editing</a>
+                          <a class="dropdownMenu dropdown-item btn-portfolio" type="button" data-filter='filterWeb' href="#portfolio">Web Development</a>
                       </div>
                       </li>
                       <li class='nav-item'>
@@ -111,24 +111,23 @@
       </div>
 
       <div class='col-lg-6'>
-          <form action='forms/contact.php' method='post' role='form' class='php-email-form'>
+          <form action="https://formsubmit.co/sofia_cmachado@hotmail.com" method='post' role='form' class='php-email-form'>
             <div class='form-row'>
               <div class='col-md-6 form-group'>
-                <input type='text' name='name' class='form-control' id='name' placeholder='Your Name' data-rule='minlen:4' data-msg='Please enter at least 4 chars'>
-                <div class='validate'></div>
+                <input type='text' name='name' class='form-control' id='name' placeholder='Your Name' data-rule='minlen:4' data-msg='Please enter at least 4 chars' required>
+                <input type="text" name="_honey" style="display:none">
               </div>
               <div class="col-md-6 form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validate"></div>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required/>
+                <input type="hidden" name="_autoresponse" value="Thank you! I'll try to respond as soon as possible!">
+                <input type="hidden" name="_next" value="./thank_you.html">
               </div>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-              <div class="validate"></div>
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject"  required/>
             </div>
             <div class="form-group">
               <textarea class="form-control" name="message" rows="3" data-rule="required" data-msg="Share something with Sofia" placeholder="Message"></textarea>
-              <div class="validate"></div>
             </div>
             <div class="mb-3">
               <div class="loading">Loading</div>

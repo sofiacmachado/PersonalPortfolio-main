@@ -95,6 +95,13 @@ p li {
 
 /* == Header == */
 
+.dropdown-item.active {
+  background-color: var(--bronze-color);
+}
+.dropdown-item:focus {
+  background-color: var(--bronze-color);
+}
+
 .mainPage {
   z-index: 997;
   transition: all 0.5s;
@@ -429,7 +436,7 @@ ul.skills-list li::before {
 }
 
 /* === Portfolio === */
-.btn-portfolio {
+.btn-portfolio:not(.dropdownMenu) {
   background: var(--yellow-color);
   border: 0;
   padding: 10px 24px;
@@ -438,11 +445,11 @@ ul.skills-list li::before {
   border-radius: 5px; 
 }
 
-.btn-portfolio:hover {
+.btn-portfolio:hover:not(.dropdownMenu) {
   background: var(--bronze-color);
 }
 
-.btn-portfolio.active {
+.btn-portfolio.active:not(.dropdownMenu){
   background-color: var(--blue-color);
 }
 
@@ -603,109 +610,8 @@ ul.skills-list li::before {
   background: var(--blue-color);
 }
 
-.contact .php-email-form {
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
-  padding: 27px;
-}
-
 .back-to-top:hover {
   color: var(--yellow-color);
-}
-
-.contact .php-email-form .validate {
-  display: none;
-  color: red;
-  margin: 0 0 15px 0;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-.contact .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .error-message br + br {
-  margin-top: 25px;
-}
-
-.contact .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-.contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-}
-
-.contact .php-email-form input, .contact .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-}
-
-
-.contact .php-email-form input {
-  padding: 20px 15px;
-}
-
-.contact .php-email-form textarea {
-  padding: 12px 15px;
-}
-
-.contact .php-email-form button[type="submit"] {
-  background: var(--yellow-color);
-  border: 0;
-  padding: 10px 24px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 5px;
-}
-
-.contact .php-email-form button[type="submit"]:hover {
-  background: var(--bronze-color);
-}
-
-@-webkit-keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 /* === Footer === */
@@ -737,7 +643,6 @@ footer .copyright {
 
 .portfolio {
   padding-top: 120px;
-  padding-bottom: 115px;
 }
 
 .portfolio > .title-a {
