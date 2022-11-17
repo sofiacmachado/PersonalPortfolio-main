@@ -4,28 +4,28 @@
   $("#topPage").append(
       `<nav id='navbar' class='mainPage navbar navbar-trans navbar-expand-md fixed-top header-transparent'>
           <div class='container'>
-              <a class='portfolioName navbar-brand active' scrollto href='index.html' id='portfolioName'>Sofia Carneiro Machado</a>
+              <a class='portfolioName navbar-brand active' scrollto href='../index.html' id='portfolioName'>Sofia Carneiro Machado</a>
               <button class='navbar-toggler collapsed' type='button' data-toggle='collapse' data-target='#navbarMenu' aria-controls='navbarMenu' aria-expanded='false' aria-label='Toggle navigation'>
               </button>
               <div id='navbarMenu' class='navbarMenu navbar-collapse collapse justify-content-end'>
                   <ul class='navbar-nav'>
                       <li class='nav-item'>
-                      <a class='nav-link scrollto' href='./index.html#about'>About</a>
+                      <a class='nav-link scrollto' href='../index.html#about'>About</a>
                       </li>
                       <li class='nav-item'>
-                      <a class='nav-link scrollto' href='./index.html#resume'>Resume</a>
+                      <a class='nav-link scrollto' href='../index.html#resume'>Resume</a>
                       </li>
                       <li class='nav-item'>
-                      <a class='nav-link scrollto' href='./index.html#portfolio'>Portfolio</a>
+                      <a class='nav-link scrollto' href='../index.html#portfolio'>Portfolio</a>
                       </li>
                       <li class='nav-item dropdown'>
                       <a id='navbarDropdown' class='nav-link dropdown' href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
                           <span>Services</span><i class='ml-2 fas fa-chevron-down'></i>
                       </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdownMenu dropdown-item btn-portfolio" type="button" data-filter='filterPhotography' href="#portfolio">Photography</a>
-                          <a class="dropdownMenu dropdown-item btn-portfolio" type="button" data-filter='filterVideography' href="#portfolio">Video Editing</a>
-                          <a class="dropdownMenu dropdown-item btn-portfolio" type="button" data-filter='filterWeb' href="#portfolio">Web Development</a>
+                          <a class="dropdownMenu dropdown-item btn-portfolio" type="button" data-filter='filterPhotography' href="../index.html#portfolio">Photography</a>
+                          <a class="dropdownMenu dropdown-item btn-portfolio" type="button" data-filter='filterVideography' href="../index.html#portfolio">Video Editing</a>
+                          <a class="dropdownMenu dropdown-item btn-portfolio" type="button" data-filter='filterWeb' href="../index.html#portfolio">Web Development</a>
                       </div>
                       </li>
                       <li class='nav-item'>
@@ -305,11 +305,6 @@ $('#footer').append(
     }
   });
 
-  // Initiate venobox (lightbox feature used in portofilo)
-  $(document).ready(function() {
-    $('.venobox').venobox({
-      'share': false
-    });
-  });
+
 
 })(jQuery);
