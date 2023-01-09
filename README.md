@@ -1,2 +1,10 @@
-# PersonalPortfolio
-This is my personal HTML/CSS portfolio
+## PersonalPortfolio
+This is my personal portfolio.
+
+
+# Tecnologies used:
+  - HTML;
+  - CSS;
+  - Javascript;
+  - Bootstrap;
+  - JQuery;
