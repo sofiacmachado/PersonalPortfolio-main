@@ -333,7 +333,7 @@ ul.skills-list li::before {
   margin-left: 10px;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .about .box-pl2 {
     margin-top: 3rem;
     padding-left: 0rem;
@@ -644,6 +644,25 @@ footer .copyright {
 
 
 /* === Portfolio Page === */
+
+@media (min-width: 576px) {
+  #iframe-bub {
+    height: 240px;
+  }
+}
+@media (min-width: 768px) {
+  #iframe-bub {
+    height: 320px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #iframe-bub {
+    height: 392px;
+  }
+}
+
+
 
 .portfolio-page-img {
   max-width: 100%;
